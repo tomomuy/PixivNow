@@ -14,7 +14,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
     case 'image':
     case '-':
       // domain = 'i'
-      return res.redirect(`https://pixiv.noel.ga/${__PATH}`)
+      return res.redirect(`https://i.highcool.ga/${__PATH}`)
     case '~':
       domain = 's'
       break
