@@ -98,7 +98,7 @@ export async function request({
 }
 
 export function isAccepted(req: VercelRequest) {
-  const { UA_BLACKLIST = '[]' } = process.env
+  const { UA_BLACKLIST = '["googlebot"]' } = process.env
   try {
     const list: string[] = JSON.parse(UA_BLACKLIST)
     const ua = req.headers['user-agent'] || ''
